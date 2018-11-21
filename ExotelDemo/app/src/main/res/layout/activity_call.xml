@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="callactivity"
+            type="com.demo.nishant.exoteldemo.Activity.CallActivity"/>
+
+
+    </data>
+<android.support.constraint.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    >
+
+    <ImageView
+        android:id="@+id/imageBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cat"
+        android:fitsSystemWindows="false"
+        android:foreground="#33000000"
+        />
+
+    <TextView
+        android:id="@+id/textDisplayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@tools:sample/full_names"
+        />
+
+    <TextView
+        android:id="@+id/textStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDisplayName"
+        tools:text="Calling…"
+        />
+
+    <TextView
+        android:id="@+id/textDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:text="00:00:00"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textStatus"
+        />
+
+    <ImageView
+        android:id="@+id/buttonHangup"
+        android:layout_width="76dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/ic_hangup_button_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="center"
+        android:src="@drawable/ic_call_end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dailerbuttonHangup"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_goneMarginEnd="40dp" />
+
+
+    <ImageView
+        android:id="@+id/dailerbuttonHangup"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="152dp"
+        android:background="@drawable/ic_hangup_button_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="center"
+        android:visibility="gone"
+        android:src="@drawable/ic_call_end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonAnswer"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_goneMarginEnd="40dp" />
+
+
+    <ImageView
+        android:id="@+id/buttonAnswer"
+        android:layout_width="80dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/ic_answer_button_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="center"
+        android:src="@drawable/ic_call"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:visibility="visible" />
+
+</android.support.constraint.ConstraintLayout>
+
+</layout>
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context=".CallActivity">-->
+
+<!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="20dp"-->
+        <!--android:gravity="center"-->
+        <!--android:id="@+id/callinfo"-->
+        <!--android:layout_marginTop="180dp"-->
+        <!--android:layout_marginBottom="150dp"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:text="Phonenumber"/>-->
+
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_weight="1.0"-->
+        <!--&gt;-->
+    <!--<Button-->
+        <!--android:id="@+id/answer"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="0.5"-->
+        <!--android:layout_height="wrap_content"-->
+
+        <!--android:text="Answer"-->
+
+        <!--/>-->
+
+
+    <!--<Button-->
+        <!--android:id="@+id/hangup"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="0.5"-->
+        <!--android:text="Hangup"-->
+        <!--android:layout_height="wrap_content"/>-->
+    <!--</LinearLayout>-->
+<!--</LinearLayout>-->
+<!--</android.support.constraint.ConstraintLayout>-->

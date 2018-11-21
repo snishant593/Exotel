@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ExotelDemo</string>
+    <string name="call_input_hint">Call…</string>
+
+        <string name="title_contact">Contacts</string>
+        <string name="title_about">Aboutus</string>
+        <string name="title_home">Home</string>
+
+</resources>
