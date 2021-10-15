@@ -51,6 +51,11 @@ public class MainActivity extends AppCompatActivity implements Constants.Contact
     private static final int MY_PERMISSIONS_REQUEST_READ_CONTACTS = 1;
     ActivityMainBinding binding;
 
+   // private static final int REQUEST_CODE_SET_DEFAULT_DIALER = 123;
+   // TextInputEditText phone;
+   // private ActionBar toolbar;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
