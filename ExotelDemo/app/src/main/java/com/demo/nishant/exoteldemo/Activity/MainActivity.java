@@ -207,6 +207,11 @@ public void onRequestPermissionsResult(int requestCode, String permissions[], in
 
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_CONTACTS},MY_PERMISSIONS_REQUEST_READ_CONTACTS);
         }
+
+        else if {
+
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_CONTACTS},MY_PERMISSIONS_REQUEST_READ_CONTACTS);
+   }
     }
 
 
